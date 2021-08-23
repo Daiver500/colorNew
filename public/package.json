@@ -1,16 +1,17 @@
 {
-  "name": "form__sber",
+  "name": "Color",
   "version": "19.0.0",
   "private": true,
-  "description": "Проект формы",
+  "description": "Проект инвестиции",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Daiver500/form__sber.git"
-   },
+    "url": "git+https://github.com/Daiver500/colorNew.git"
+  },
   "devDependencies": {
     "css-loader": "^5.2.4",
     "eslint": "7.1.0",
     "eslint-config-htmlacademy": "0.6.0",
+    "imask": "^6.1.0",
     "mini-css-extract-plugin": "^1.6.0",
     "node-sass": "^6.0.1",
     "node.js": "0.0.1-security",
@@ -34,9 +35,9 @@
     "node": "14.17.5"
   },
   "bugs": {
-    "url": "https://github.com/Daiver500/form__sber/issues"
+    "url": "https://github.com/Daiver500/colorNew/issues"
   },
-  "homepage": "https://github.com/Daiver500/form__sber#readme",
+  "homepage": "https://github.com/Daiver500/colornew#readme",
   "main": "bundle.js",
   "author": ""
 }

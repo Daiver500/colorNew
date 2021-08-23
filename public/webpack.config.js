@@ -3,13 +3,13 @@ const miniCss = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: [
-    "./js/index.js",
-    "./js/modal.js",
+    ".public/js/index.js",
+    "./public/js/modal.js",
   ],
   watch: true,
   output: {
     filename: "bundle.js",
-    path: path.resolve(__dirname),
+    path: path.resolve(__dirname, + "public"),
     iife: true
   },
    module: {
