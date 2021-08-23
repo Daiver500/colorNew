@@ -1,0 +1,73 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: $green;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  font-family: "PTMono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.include {
+  display: none;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.page__button {
+  font-family: "PTMono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $white;
+  text-transform: uppercase;
+  background-color: $black;
+  border: 1px solid $black;
+  border-radius: 10px;
+  padding: 14px 45px;
+  cursor: pointer;
+  margin-bottom: 34px;
+}
+
+.page__button:hover,
+.page__button:focus {
+  background-color: $white;
+  color: $black;
+  border: 1px solid $black;
+}
