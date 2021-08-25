@@ -1,10 +1,34 @@
-/* pt-mono - latin_cyrillic */
+/* inter-regular - latin_cyrillic */
 @font-face {
-  font-family: "PTMono";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("PTMono"), url("fonts/pt-mono.woff2") format("woff2"), url("fonts/pt-mono.woff") format("woff"); }
+  src: local("Inter"), url("../fonts/inter.woff2") format("woff2"), url("../fonts/inter.woff") format("woff"); }
+
+/* SFUI-regular - latin_cyrillic */
+@font-face {
+  font-family: "SFUI";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("SFUI"), url("../fonts/SFUI.woff2") format("woff2"), url("../fonts/SFUI.woff") format("woff"); }
+
+/* SFUI medium - latin_cyrillic */
+@font-face {
+  font-family: "SFUI-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("SFUI-Medium"), url("../fonts/SFUI-Medium.woff2") format("woff2"), url("../fonts/SFUI-Medium.woff") format("woff"); }
+
+/* SFUI bold - latin_cyrillic */
+@font-face {
+  font-family: "SFUI-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("SFUI-Bold"), url("../fonts/SFUI-Bold.woff2") format("woff2"), url("../fonts/SFUI-Bold.woff") format("woff"); }
 
 .visually-hidden {
   position: absolute;
@@ -20,7 +44,7 @@ a {
   text-decoration: none; }
 
 a:link {
-  color: green; }
+  color: #fff; }
 
 *,
 *::before,
@@ -41,7 +65,9 @@ body {
   font-weight: 400;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; }
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff; }
 
 .include {
   display: none; }
@@ -387,37 +413,12 @@ template {
 [hidden] {
   display: none; }
 
-.main {
-  position: relative;
-  color: orange; }
+.navigation__Logo-desktop {
+  width: 165px;
+  height: 62px; }
 
-.main__inner {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  left: 0; }
-
-.main__button {
-  font-family: "PTMono", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  color: #fff;
-  text-transform: uppercase;
-  background-color: #000;
-  border: 1px solid #000;
-  border-radius: 10px;
-  padding: 14px 45px;
-  cursor: pointer;
-  position: relative; }
-
-.main__button:hover,
-.main__button:focus {
-  background-color: #fff;
-  color: #000;
-  border: 1px solid #000; }
+.navigation__Logo-mobile {
+  display: none; }
 
 .modal__inner,
 .modal-success__inner {
