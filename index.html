@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="utf-8" />
@@ -7,8 +7,10 @@
   <meta name="keywords" content="Инвестиции, фонды, валюта, вклады" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="preload" href="style.css" as="style" />
-  <link rel="preload" href="fonts/pt-mono.woff2" as="font" />
+  <link rel="preload" href="fonts/inter.woff2" as="font" />
+  <link rel="preload" href="fonts/SFUI.woff2" as="font" />
   <link rel="stylesheet" href="style.css" />
+  <title>Инвестиции</title>
 </head>
 
 <body class="page">
@@ -118,8 +120,8 @@
           <p class="about__header">Новое видео уже на YouTube</p>
           <a class="about__link" href="#" target="_blank">Смотреть видео</a>
         </div>
-        <img class="about__picture">
-          <img class="about__image" src="img/video-image.jpg" width="242" height="154" alt="обложка видео"></img>
+        <picture class="about__picture">
+          <img class="about__image" src="img/video-image.jpg" width="242" height="154" alt="обложка видео">
         </picture>
         </div>
 
@@ -490,6 +492,7 @@
           </div>
         </div>
       </div>
+      </div>
     </section>
     <section class="calculator">
       <div class="calculator__inner">
@@ -501,7 +504,8 @@
             <div class="calculator__input">
               <label class="form__label">
                 Сумма сбережений
-              <input id="square-of-building" class="form__select" type="number" min="1" max="300" name="square" pattern="^[0-9]+$"/>
+              </label>
+              <input id="square-of-building" class="form__select" type="number" min="1" max="300" name="square" />
               <div class="form__controls">
                <div class="from__scale">
                  <div class="form__bar"></div>
@@ -509,8 +513,7 @@
                <div class="form__toggle" tabindex="0">
                 </div>
               </div>
-              100 тыс 5 млн
-              </label>
+
             </div>
            <div class="calculator__buttons">
            <p class="calculator__buttons-text">Срок</p>
@@ -672,13 +675,13 @@
 
        <div class="footer__finances">
          <ul class="footer__borrowers borrowers">
-           <h3 class="borrowers__header">Заемщикам</h3>
+           <li class="borowers__item"><p class="borrowers__header">Заемщикам</p></li>
            <li class="borowers__item"><a href="blank.html" target="_blank">Рефинансирование</a></li>
            <li class="borowers__item"><a href="blank.html" target="_blank">Займы под залог недвижимости</a></li>
            <li class="borowers__item"><a href="blank.html" target="_blank">Срочный выкуп недвижимости</a></li>
          </ul>
          <ul class="footer__business business">
-          <h3 class="business__header">Бизнес</h3>
+          <li class="borowers__item"><p class="business__header">Бизнес</p></li>
           <li class="business__item"><a href="blank.html" target="_blank">Финансирование бизнеса</a></li>
           <li class="business__item"><a href="blank.html" target="_blank">Инвестиции в бизнес</a></li>
          </ul>
@@ -729,21 +732,19 @@
               oninvalid="setCustomValidity('Введите имя на кириллице')" oninput="setCustomValidity('')">
           </label>
           <label class="modal__label"> <span class="visually-hidden">Телефон</span>
-            <input class="modal__phone" type="text" name="telephone" id="phone" placeholder="Номер телефона*" required
+            <input class="modal__phone" type="text" name="telephone" id="phone-modal" placeholder="Номер телефона*" required
               oninvalid="setCustomValidity('Введите 10 цифр')" oninput="setCustomValidity('')" />
           </label>
-          </label>
           <label class="modal__label"> <span class="visually-hidden">Электронная почта</span>
-            <input class="modal__mail" type="mail" name="email" id="email" placeholder="Электронная почта" />
+            <input class="modal__mail" type="email" name="email" id="email" placeholder="Электронная почта" />
           </label>
           <button class="modal__button" type="submit">Начать работу</button>
           <div class="modal__information">
             <p class="modal__text">Нажимая кнопку "Отправить", я даю условие на обработку персональных данных.<a
-                target="__blank" class="modal__link" href="../form__sber/test.docx" download="">Условия использования
+                target="_blank" class="modal__link" href="../form__sber/test.docx" download="">Условия использования
                 данных.</a></p>
           </div>
         </div>
-    </div>
     </form>
 
     </div>
@@ -751,7 +752,7 @@
   <section class="modal-success hidden">
     <div class="modal-success__inner">
       <div class="modal-success__title">
-        <img class="modal-success__image" src="">
+        <img class="modal-success__image" src="/img/four-icon.svg" alt="иконка">
         <p class="modal-success__text">Заявка отправлена!</p>
         <p class="modal-success__text">Менеджер уже звонит, посмотрите на телефон.</p>
       </div>
