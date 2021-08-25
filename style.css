@@ -413,11 +413,19 @@ template {
 [hidden] {
   display: none; }
 
-.navigation__Logo-desktop {
+.navigation {
+  display: flex;
+  flex-direction: column; }
+
+.navigation__menu {
+  display: flex; }
+
+.navigation__logo-desktop {
   width: 165px;
   height: 62px; }
 
-.navigation__Logo-mobile {
+.navigation__logo-mobile,
+.navigation__toggle-mobile {
   display: none; }
 
 .modal__inner,
