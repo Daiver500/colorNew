@@ -2,6 +2,7 @@ const path = require("path");
 const miniCss = require("mini-css-extract-plugin");
 
 module.exports = {
+  mode: production,
   entry: [
     "./js/index.js",
     "./js/modal.js"
