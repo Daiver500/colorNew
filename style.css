@@ -4,7 +4,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("inter"), url("../fonts/inter.woff2") format("woff2"), url("../fonts/inter.woff") format("woff"); }
+  src: local("inter"), url("fonts/inter.woff2") format("woff2"), url("fonts/inter.woff") format("woff"); }
 
 /* SFUI-regular - latin_cyrillic */
 @font-face {
@@ -12,7 +12,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("sf"), url("../fonts/sf.woff2") format("woff2"), url("../fonts/sf.woff") format("woff"); }
+  src: local("sf"), url("fonts/sf.woff2") format("woff2"), url("../fonts/sf.woff") format("woff"); }
 
 /* SFUI medium - latin_cyrillic */
 @font-face {
@@ -20,7 +20,7 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: local("sf-med"), url("../fonts/sf-med.woff2") format("woff2"), url("../fonts/sf-med.woff") format("woff"); }
+  src: local("sf-med"), url("fonts/sf-med.woff2") format("woff2"), url("fonts/sf-med.woff") format("woff"); }
 
 /* SFUI bold - latin_cyrillic */
 @font-face {
@@ -28,7 +28,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local("sf-bold"), url("../fonts/sf-bold.woff2") format("woff2"), url("../fonts/sf-bold.woff") format("woff"); }
+  src: local("sf-bold"), url("fonts/sf-bold.woff2") format("woff2"), url("fonts/sf-bold.woff") format("woff"); }
 
 .visually-hidden {
   position: absolute;
