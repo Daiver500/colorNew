@@ -52,6 +52,14 @@ body {
   flex-grow: 1;
 }
 
+.page {
+  background-image: url("img/main-bg-image-desktop.jpg");
+  background-size: auto;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  //margin-top: -110px;
+}
+
 .page__button {
   font-family: "PTMono", "Arial", sans-serif;
   font-weight: 400;

@@ -1,18 +1,117 @@
 .navigation {
-  display: flex;
-  flex-direction: column;
+  margin-top: 5px;
+  margin-bottom: 115px;
 }
 
-.navigation__menu {
+.navigation__inner {
   display: flex;
+  padding-top: 6px;
+  padding-bottom: 14px;
+  padding-left: 42px;
+  padding-right: 32px;
+  position: relative;
+  justify-content: space-between;
 }
 
-.navigation__logo-desktop {
+.navigation__list {
+  list-style: none;
+  //display: grid;
+  //grid-template-columns: 1fr 1fr max-content 1fr 1fr 1fr;
+  padding-left: 0;
+  margin-top: 27px;
+  margin-bottom: 0;
+  //grid-column-gap: 40px;
+  max-width: 780px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navigation__item:not(:last-child) {
+  padding-right: 40px;
+}
+
+.navigation__logo {
   width: 165px;
   height: 62px;
+  padding-right: 5px;
 }
 
 .navigation__logo-mobile,
 .navigation__toggle-mobile {
   display: none;
+}
+
+.navigation__button {
+  margin-top: 10px;
+  border-radius: 60px;
+  color: $orange;
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 37px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-right: 31px;
+  font-family: "sf-med", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.navigation__button:hover,
+.navigation__button:focus {
+  background-color: $orange;
+  color: $black;
+}
+
+.navigation__buttons {
+  position: absolute;
+  right: 50px;
+  top: 100px;
+}
+
+.navigation__toggles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 22px;
+}
+
+.navigation__toggle {
+  background-color: inherit;
+  width: 20px;
+  height: 20px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.navigation__toggle:hover,
+.navigation__toggle:focus {
+  opacity: 0.5;
+}
+
+.navigation__toggle svg {
+  color: $nav-toggles;
+}
+
+.navigation__link {
+  font-family: "inter", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.navigation__link:hover,
+.navigation__link:focus {
+  opacity: 0.5;
+}
+
+@media (max-width: 1270px) {
+  .navigation__button {
+    position: absolute;
+    top: 68px;
+    left: 47px;
+  }
 }

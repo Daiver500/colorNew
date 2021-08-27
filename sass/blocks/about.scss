@@ -1,0 +1,154 @@
+.about {
+  margin-bottom: 69px;
+}
+
+.about__inner {
+  display: flex;
+  flex-direction: column;
+  padding-left: 42px;
+  padding-right: 35px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.about__information {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 77px;
+}
+
+.about__title {
+  max-width: 700px;
+  font-family: "sf", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 73px;
+  line-height: 90px;
+}
+
+.about__text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.about__text span {
+  color: $orange;
+}
+
+.about__social {
+  display: flex;
+  align-items: center;
+}
+
+.social__list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.social__item:not(:last-child) {
+  padding-bottom: 23px;
+}
+
+.social__link {
+  min-width: 37px;
+  height: 37px;
+  background-color: $white;
+  border-radius: 50%;
+  display: inline-flex;
+  border: 3px solid $black;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__link:hover,
+.social__link:focus {
+  animation-name: shake;
+  animation-duration: 2s;
+  opacity: 0.5;
+}
+
+.social__svg {
+  color: $black;
+}
+
+.social__svg-vk {
+  color: $red;
+}
+
+.about__video {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.video__title {
+  background-color: rgba(155, 155, 155, 0);
+  backdrop-filter: blur(7px);
+  display: flex;
+  position: relative;
+}
+
+.video__title::after {
+  position: absolute;
+  background-repeat: no-repeat;
+  content: "";
+  left: 58%;
+  top: 48px;
+  width: 79px;
+  height: 68px;
+  background-image: url("img/play-video-icon.svg");
+  cursor: pointer;
+}
+
+.video__title,
+.video__image {
+  border-radius: 47px 0 0 0;
+}
+
+.video__image {
+  height: 100%;
+  min-width: 242px;
+}
+
+.video__header {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: "sf", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 22px;
+  min-width: 325px;
+}
+
+.video__text {
+  padding: 53px 35px;
+}
+
+.video__link {
+  font-family: "sf", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateY(-2px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateY(2px);
+  }
+}

@@ -73,7 +73,7 @@
   min-width: 380px;
   background-color: $white;
   border: 0;
-  color: $green;
+  color: $orange;
 }
 
 .modal__form input::placeholder {
@@ -167,7 +167,7 @@
   left: 5px;
   right: 0;
   max-width: 364px;
-  border-bottom: 1px solid $grey;
+  border-bottom: 1px solid $orange;
 }
 
 @media (max-width: $max-tablet-width) {
