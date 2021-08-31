@@ -27,7 +27,7 @@
 }
 
 .offers__desktop-card {
-  padding: 32px 40px 37px 23px;
+  padding: 32px 2% 37px 2%;
   width: 50%;
   background-color: $dark-grey;
   border-radius: 5%;
@@ -78,7 +78,6 @@
 .offers__info {
   display: flex;
   flex-direction: column;
-  margin-bottom: 29px;
 }
 
 .offers__title,
@@ -88,23 +87,42 @@
 
 .offers__title {
   margin-bottom: 13px;
+  font-size: 15px;
+  line-height: 14px;
+  color: $light-grey;
 }
 
 .offers__text {
   margin-bottom: 0;
+  font-size: 17px;
+  line-height: 25px;
+  max-width: 365px;
 }
 
 .offers__profit {
-  display: flex;
-  flex-direction: column;
+  //display: flex;
+  //flex-direction: column;
   margin-bottom: 38px;
+  background-color: $black;
+  border-radius: 18px;
+  padding: 16px 23px 18px 21px;
+  margin-top: 29px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .profit__list {
-  display: flex;
+  // display: flex;
   list-style: none;
   padding-left: 0;
   margin-bottom: 19px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(96px, 1fr));
+  grid-template-columns: max-content 1fr 1fr 1fr 1fr;
+}
+
+.profit__item:first-child {
+  padding-right: 15px;
 }
 
 .profit__header,
@@ -126,17 +144,52 @@
 
 .profit__title {
   margin-bottom: 3px;
+  font-size: 27px;
+  line-height: 33px;
+  font-weight: 900;
+}
+
+.profit__text {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.profit__price {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
 }
 
 .offers__offer {
   margin: 0;
+  background-color: $dark-grey;
+  padding: 17px 27px 16px 22px;
+  border-radius: 15px;
+}
+
+.profit__header,
+.percent__header {
+  font-size: 14px;
+  line-height: 17px;
+  color: $card-color;
+}
+
+.offers__percents {
+  margin-top: 40px;
+  margin-bottom: 109px;
 }
 
 .percent__list {
-  display: flex;
+  //display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   list-style: none;
-  padding-left: 0;
-  margin-bottom: 82px;
+  margin-bottom: 0;
+  background-color: $black;
+  border-radius: 18px;
+  padding: 31px 10% 28px 28px;
+  justify-content: space-around;
 }
 
 .percent__header {
@@ -145,4 +198,38 @@
 
 .percent__title {
   margin-bottom: 4px;
+  font-size: 33px;
+  line-height: 41px;
+  font-weight: 900;
 }
+
+.percent__text {
+  font-size: 13px;
+  line-height: 14px;
+}
+
+.offers__button-main {
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 500;
+  background-color: $orange;
+  border: none;
+  color: $black;
+  cursor: pointer;
+  border-radius: 27px;
+  padding: 19px 65px 19px 27px;;
+  position: relative;
+}
+
+.offers__button-main::after {
+  position: absolute;
+  background-repeat: no-repeat;
+  content: "";
+  left: 75%;
+  top: 18px;
+  width: 28px;
+  height: 17px;
+  background-image: url("img/arrow-right-button.svg");
+  cursor: pointer;
+}
+
