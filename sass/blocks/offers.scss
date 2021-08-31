@@ -177,7 +177,7 @@
 
 .offers__percents {
   margin-top: 40px;
-  margin-bottom: 109px;
+  margin-bottom: 109ypx;
 }
 
 .percent__list {
@@ -219,6 +219,11 @@
   border-radius: 27px;
   padding: 19px 65px 19px 27px;;
   position: relative;
+}
+
+.offers__button-main:hover,
+.offers__button-main:focus {
+  opacity: 0.5;
 }
 
 .offers__button-main::after {
