@@ -1,0 +1,104 @@
+.information {
+  margin-bottom: 118px;
+}
+
+.information__inner {
+  display: flex;
+  flex-direction: column;
+  padding-left: 94px;
+  padding-right: 50px;
+  background-image: url("img/piramids.jpg");
+  background-size: 21vw;
+  background-position: 90% 108%;
+  background-repeat: no-repeat;
+}
+
+.information__quantity {
+  display: flex;
+  margin-bottom: 39px;
+}
+
+.information__title {
+  padding-right: 42px;
+}
+
+.information__title p,
+.information__text p,
+.information__list,
+.information__header p,
+.information__list-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "sf", "Arial", sans-serif;
+}
+
+.information__title p {
+  font-weight: 700;
+  font-size: 104px;
+  line-height: 103px;
+}
+
+.information__text {
+  padding-top: 10px;
+  max-width: 345px;
+}
+
+.information__text p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: $grey;
+}
+
+.information__header {
+  margin-bottom: 24px;
+  color: $orange;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.information__list {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 670px;
+}
+
+.information__list-title {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 53px;
+  margin-top: 0;
+  margin-bottom: 11px;
+}
+
+.information__item:last-child .information__list-title {
+  color: $orange;
+}
+
+.information__list-text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  max-width: 131px;
+  position: relative;
+}
+
+.information__list-text::after {
+  position: absolute;
+  background-repeat: no-repeat;
+  content: "";
+  left: 67%;
+  top: 10px;
+  width: 79px;
+  height: 68px;
+  background-image: url("img/question-icon.svg");
+  cursor: pointer;
+}
+
+.information__item:last-child .information__list-text::after {
+  left: 80%;
+}
+
