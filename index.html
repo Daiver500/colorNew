@@ -32,7 +32,7 @@
             <li class="navigation__item"><a class="navigation__link" href="blank.html" target="_blank">О нас</a></li>
             <li class="navigation__item"><a class="navigation__link" href="blank.html" target="_blank">Документы</a></li>
           </ul>
-          <button class="navigation__button" type="button">Инвестировать</button>
+          <button class="navigation__button button" type="button">Инвестировать</button>
 
         <div class="navigation__buttons">
           <div class="navigation__toggles">
@@ -195,8 +195,7 @@
             <div class="offers__desktop-card">
               <h3 class="offers__header">Доверительное управление (ДУ)</h3>
               <ul class="offers__list">
-                <li class="offers__item"><button type="button"
-                    class="offers__button offers__button--active">Условия</button></li>
+                <li class="offers__item"><button type="button" class="offers__button offers__button--active">Условия</button></li>
                 <li class="offers__item"><button type="button" class="offers__button">Преимущества</button></li>
                 <li class="offers__item"><button type="button" class="offers__button">Ограничения</button></li>
                 <li class="offers__item"><button type="button" class="offers__button">Шаблон договора</button></li>
@@ -313,7 +312,7 @@
                 <p class="offers__price">Test3</p>
               </div>
 
-              <button type="button" class="offers__button-main">Инвестировать</button>
+              <button type="button" class="button offers__button-main">Инвестировать</button>
             </div>
 
               <div class="offers__desktop-card">
@@ -396,7 +395,7 @@
                     </li>
                   </ul>
                 </div>
-                <button type="button" class="offers__button-main">Инвестировать</button>
+                <button type="button" class="button offers__button-main">Инвестировать</button>
               </div>
 
 
@@ -514,7 +513,7 @@
                   </li>
                 </ul>
               </div>
-              <button type="button" class="offers__button-main">Инвестировать</button>
+              <button type="button" class="button offers__button-main">Инвестировать</button>
             </div>
             <div class="offers__mobile-card">
               <p class="offers__mobile-card-header">Финансирование конкретной сделки</p>
@@ -595,7 +594,7 @@
                   </li>
                 </ul>
               </div>
-              <button type="button" class="offers__button-main">Инвестировать</button>
+              <button type="button" class="button offers__button-main">Инвестировать</button>
             </div>
           </div>
         </div>
@@ -640,12 +639,12 @@
               </div>
             </div>
           </div>
-          <div class="calculator__numbers numbers">
+          <div class="calculator__numbers">
             <div class="calculator__item">
               <p class="calculator__title">Ежемесячное начисление</p>
-              <p class="calculator__text">22 208 ₽ </p>
+              <p class="calculator__text calculator__text-main">22 208 ₽ </p>
             </div>
-            <div class="calculator__number">
+            <div class="calculator__profit">
               <div class="calculator__item">
                 <p class="calculator__title">Доход</p>
                 <p class="calculator__text">13%</p>
@@ -655,16 +654,16 @@
                 <p class="calculator__text">316 500 ₽</p>
               </div>
             </div>
-            <div class="calculator__buttons">
-              <button class="numbers__button" type="button">Инвестировать</button>
-              <button class="numbers__button" type="button">Получить консультацию</button>
+            <div class="calculator__toggles numbers">
+              <button type="button" class="button numbers__button">Инвестировать</button>
+              <button type="button" class="button numbers__button numbers__button-consult">Получить консультацию</button>
             </div>
           </div>
         </div>
       </div>
     </section>
     <section class="howtobe">
-      <div class="howtobe__inner">
+      <div class="howtobe__inner container">
         <h2 class="howtobe__header">Как стать инвестором</h2>
         <ul class="howtobe__list">
           <li class="howtobe__item">
@@ -709,20 +708,21 @@
           </li>
         </ul>
         <div class="howtobe__buttons">
-          <button class="howtobe__button" type="button">Оставить заявку</button>
-          <button class="howtobe__button" type="button">Необходимые документы</button>
+          <button type="button" class="button howtobe__button howtobe__button-request">Оставить заявку</button>
+          <a href="#" class="howtobe__button howtobe__button-docs">Необходимые документы</a>
         </div>
       </div>
     </section>
     <section class="reviews">
       <div class="reviews__inner container">
+        <div class="reviews__wrapper container">
         <div class="reviews__header">
-          <h2 class="reviews__title">Отвызы инвесторов</h2>
+          <h2 class="reviews__header-main">Отвызы инвесторов</h2>
           <a class="reviews__link" href="#" target="_blank">Больше отзывов</a>
         </div>
         <div class="reviews__videos">
           <div class="reviews__information">
-            <video class="reviews__video" width="427" height="427" poster="./img/video-one.png" autoplay="autoplay"
+            <video class="reviews__video" width="410" height="227" poster="./img/video-one.png" autoplay="autoplay"
               loop="loop" tabindex="0">
               <source src="movie.webm" type='video/webm; codecs="vp8, vorbis"' />
               <source src="movie.ogv" type='video/ogg; codecs="theora, vorbis"' />
@@ -730,7 +730,7 @@
             <p class="reviews__title">Отзыв нашего инвестора</p>
           </div>
           <div class="reviews__information">
-            <video class="reviews__video" width="427" height="427" poster="./img/video-two.png" autoplay="autoplay"
+            <video class="reviews__video" width="410" height="227" poster="./img/video-two.png" autoplay="autoplay"
               loop="loop" tabindex="0">
               <source src="movie.webm" type='video/webm; codecs="vp8, vorbis"' />
               <source src="movie.ogv" type='video/ogg; codecs="theora, vorbis"' />
@@ -738,7 +738,7 @@
             <p class="reviews__title">Отзыв нашего инвестора</p>
           </div>
           <div class="reviews__information">
-            <video class="reviews__video" width="427" height="427" poster="./img/video-three.png" autoplay="autoplay"
+            <video class="reviews__video" width="410" height="227" poster="./img/video-three.png" autoplay="autoplay"
               loop="loop" tabindex="0">
               <source src="movie.webm" type='video/webm; codecs="vp8, vorbis"' />
               <source src="movie.ogv" type='video/ogg; codecs="theora, vorbis"' />
@@ -752,9 +752,10 @@
             <p class="guarantees__text">Каждая сделка подкреплена залогом в виде ликвидной недвижимости. Ее рыночная
               стоимость минимум в 2 раза выше суммы инвестиций, что перекрывает риски </p>
           </div>
-          <div class="guarantees__buttons">
+
             <button class="guarantees__button" type="button">Получить консультацию</button>
-          </div>
+
+        </div>
         </div>
       </div>
     </section>

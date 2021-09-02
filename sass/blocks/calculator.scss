@@ -1,11 +1,11 @@
 .calculator {
-  margin-bottom: 99px;
+  margin-bottom: 59px;
   background-color: $dark-grey;
 }
 
 .calculator__inner {
-  padding: 71px 100px 87px 100px;
-  max-width: 1210px;
+  padding: 71px 65px 87px 65px;
+  max-width: 1150px;
 }
 
 .calculator__header {
@@ -19,10 +19,11 @@
 
 .calculator__information {
   display: flex;
+  justify-content: space-between;
 }
 
 .calculator__input-and-buttons {
-  padding-right: 10%;
+  padding-right: 1%;
 }
 
 .calculator__input {
@@ -118,17 +119,22 @@
   margin-bottom: 17px;
 }
 
+.calculator__bar,
+.calculator__toggle {
+  position: absolute;
+}
+
 .calculator__bar {
   height: 5px;
   background: $orange;
   width: 100%;
   margin-left: 0;
   border-radius: 16px;
+  top: -3px;
 }
 
 .calculator__toggle {
-  position: absolute;
-  top: -5px;
+  top: -9px;
   width: 16px;
   height: 16px;
   padding: 0;
@@ -138,4 +144,97 @@
   left: 40%;
   border: 1px solid $orange;
   box-shadow: 0 2px 2px rgba(255, 255, 255, 0.3);
+}
+
+.calculator__numbers {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 49px 60px 47px 60px;
+  background-color: $black;
+  border-radius: 30px;
+  max-height: 415px;
+  margin-top: 10px;
+}
+
+.calculator__numbers::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  border: 1px solid $light-grey;
+  min-width: 380px;
+  top: 135px;
+  left: 76px;
+}
+
+.calculator__title,
+.calculator__text {
+  margin-top: 0;
+}
+
+.calculator__title {
+  margin-bottom: 8px;
+  font-size: 15px;
+  line-height: 14px;
+  color: $light-grey;
+}
+
+.calculator__text-main,
+.calculator__text {
+  font-weight: 700;
+}
+
+.calculator__text-main {
+  margin-bottom: 70px;
+  font-size: 50px;
+}
+
+.calculator__text {
+  margin-bottom: 61px;
+  font-size: 43px;
+  line-height: 43px;
+}
+
+.calculator__profit {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calculator__toggles {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-gap: 15px;
+}
+
+.numbers__button,
+.numbers__button-consult {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.numbers__button {
+  padding: 17px 29px;
+  border-radius: 27px;
+  font-size: 15px;
+  line-height: 15px;
+  background-color: $orange;
+  color: $black;
+  border: none;
+}
+
+.numbers__button:hover,
+.numbers__button:focus {
+  background-color: $white;
+  color: $black;
+}
+
+.numbers__button-consult {
+  font-size: 12px;
+  line-height: 13px;
+  padding: 10px 22px;
+  max-width: 165px;
+  background-color: $black;
+  color: $button;
+  border: 1px solid $light-grey;
+  text-align: center;
 }

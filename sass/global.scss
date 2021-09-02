@@ -13,9 +13,12 @@ a {
   text-decoration: none;
 }
 
-a:link {
+a:link
+//a:visited
+{
   color: $white;
 }
+
 
 *,
 *::before,
