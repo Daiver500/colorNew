@@ -1,0 +1,113 @@
+.howtobe {
+  margin-bottom: 51px;
+}
+
+.howtobe__inner {
+  padding: 40px 127px 81px 60px;
+}
+
+.howtobe__header {
+  margin-top: 0;
+  margin-bottom: 82px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.howtobe__list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 77px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  //grid-template-columns: max-content max-content max-content max-content;
+  grid-column-gap: 85px;
+  grid-row-gap: 20px;
+  max-width: 1200px;
+}
+
+.howtobe__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+.howtobe__item:not(:last-child)::after {
+  position: absolute;
+  background-repeat: no-repeat;
+  content: "";
+  left: 105%;
+  top: 60px;
+  width: 46px;
+  height: 27px;
+  background-image: url("img/arrow-right.svg");
+}
+
+.howtobe__image {
+  margin-bottom: 40px;
+  max-height: 150px;
+  max-width: 150px;
+}
+
+.howtobe__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 15px;
+  line-height: 22px;
+  max-width: 220px;
+  text-align: center;
+}
+
+.howtobe__buttons {
+  max-width: 580px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.howtobe__button,
+.howtobe__button-docs {
+  text-transform: uppercase;
+  border-radius: 30px;
+}
+
+.howtobe__button {
+  font-size: 15px;
+  line-height: 15px;
+  background-color: $orange;
+  color: $black;
+  padding: 19px 76px 19px 38px;
+  font-weight: 600;
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+
+.howtobe__button-request::after {
+  position: absolute;
+  background-repeat: no-repeat;
+  content: "";
+  left: 75%;
+  top: 18px;
+  width: 28px;
+  height: 17px;
+  background-image: url("img/arrow-right-button.svg");
+  cursor: pointer;
+}
+
+.howtobe__button:hover,
+.howtobe__button:focus {
+  background-color: white;
+  color: $black;
+}
+
+.howtobe__button-docs {
+  font-size: 14px;
+  line-height: 13px;
+  font-weight: 500;
+  padding: 18px 22px;
+  background-color: $black;
+  color: $light-grey;
+  border: 1px solid $light-grey;
+}

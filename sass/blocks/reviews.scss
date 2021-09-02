@@ -1,0 +1,130 @@
+.reviews__inner {
+  background-color: $dark-grey;
+  padding: 50px;
+  max-width: 1350px;
+  transform: translateX(-4%);
+}
+
+.reviews__header {
+  display: flex;
+  margin-bottom: 60px;
+  align-items: center;
+}
+
+.reviews__header-main {
+  margin: 0;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  padding-right: 16px;
+}
+
+.reviews__link {
+  background-color: $orange;
+  color: $black;
+  text-transform: uppercase;
+  border-radius: 30px;
+  padding: 17px 23px;
+  text-align: center;
+  margin-top: 21px;
+}
+
+.reviews__link:hover,
+.reviews__link:focus {
+  opacity: 0.5;
+}
+
+.reviews__videos {
+  display: grid;
+  //grid-template-columns: repeat(auto-fill, minmax(411px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 37px;
+  justify-items: center;
+  margin-bottom: 63px;
+}
+
+@media (max-width: 1390px) {
+  .reviews__videos {
+    grid-template-columns: repeat(auto-fill, minmax(411px, 1fr));
+    grid-gap: 10px;
+    max-width: 960px;
+  }
+}
+
+.reviews__video {
+  width: 411px;
+  height: 227px;
+  cursor: pointer;
+  margin-bottom: 21px;
+}
+
+.reviews__information {
+  display: flex;
+  flex-direction: column;
+  max-width: 425px;
+  background-color: $videos;
+  padding: 5px 5px 28px 5px;
+  border-radius: 18px;
+}
+
+.reviews__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 10px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.reviews__guarantees {
+  display: flex;
+  padding: 34px 34px 42px 36px;
+  border: 1px solid $nav-toggles;
+  border-radius: 27px;
+  max-width: 1185px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.guarantees__information {
+  display: flex;
+  flex-direction: column;
+  max-width: 780px;
+}
+
+.guarantees__header,
+.guarantees__text {
+  margin-top: 0;
+}
+
+.guarantees__text {
+  margin-bottom: 0;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.guarantees__header {
+  margin-bottom: 13px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.guarantees__button {
+  padding: 15px 22px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 15px;
+  text-transform: uppercase;
+  background-color: $orange;
+  color: $black;
+  border: none;
+  border-radius: 15px;
+  min-width: 270px;
+}
+
+.guarantees__button:hover,
+.guarantees__button:focus {
+  opacity: 0.5;
+  cursor: pointer;
+}
