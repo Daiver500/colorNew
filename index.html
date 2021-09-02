@@ -602,33 +602,42 @@
       </div>
     </section>
     <section class="calculator">
-      <div class="calculator__inner">
+      <div class="calculator__inner container">
         <h2 class="calculator__header">
           Калькулятор дохода в Доверительном Управлении
         </h2>
         <div class="calculator__information">
           <div class="calculator__input-and-buttons">
             <div class="calculator__input">
-              <label class="form__label">
+              <label class="calculator__label">
                 Сумма сбережений
+
+              <input class="calculator__summ" type="text" min="1" max="300" name="summ" placeholder="2 050 000" />
+              <div class="calculator__controls">
+                <div class="calculator__scale">
+                  <div class="calculator__bar"></div>
+                </div>
+                <div class="calculator__toggle" tabindex="0">
+                </div>
               </label>
-              <input id="square-of-building" class="form__select" type="number" min="1" max="300" name="square" />
-              <div class="form__controls">
-                <div class="from__scale">
-                  <div class="form__bar"></div>
-                </div>
-                <div class="form__toggle" tabindex="0">
-                </div>
+                <div class="calculator__min-max">
+                  <label class="calculator__min-price">100 тыс</label>
+                  <label class="calculator__max-price">5 млн</label>
+              </div>
               </div>
 
             </div>
             <div class="calculator__buttons">
               <p class="calculator__buttons-text">Срок</p>
-              <button class="calculator__button calculator__button--active">6 мес</button>
-              <button class="calculator__button">12 мес</button>
+              <div class="calculator__buttons-top">
+                <button class="calculator__button calculator__button-up calculator__button--active">6 мес</button>
+                <button class="calculator__button calculator__button-up">12 мес</button>
+              </div>
               <p class="calculator__buttons-text">Выплаты</p>
-              <button class="calculator__button calculator__button--active">В конце срока</button>
-              <button class="calculator__button">Ежемесячно</button>
+              <div class="calculator__buttons-bottom">
+                <button class="calculator__button calculator__button-bottom calculator__button--active">В конце срока</button>
+                <button class="calculator__button calculator__button-bottom">Ежемесячно</button>
+              </div>
             </div>
           </div>
           <div class="calculator__numbers numbers">

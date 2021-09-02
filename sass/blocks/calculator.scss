@@ -1,0 +1,141 @@
+.calculator {
+  margin-bottom: 99px;
+  background-color: $dark-grey;
+}
+
+.calculator__inner {
+  padding: 71px 100px 87px 100px;
+  max-width: 1210px;
+}
+
+.calculator__header {
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  max-width: 900px;
+}
+
+.calculator__information {
+  display: flex;
+}
+
+.calculator__input-and-buttons {
+  padding-right: 10%;
+}
+
+.calculator__input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 84px;
+}
+
+.calculator__label {
+  display: flex;
+  flex-direction: column;
+}
+
+.calculator__summ {
+  min-width: 100%;
+  padding: 15px;
+  font-size: 23px;
+  line-height: 22px;
+  color: $white;
+  //margin-bottom: 13px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  margin-top: 10px;
+}
+
+.calculator__summ:hover,
+.calculator__summ:focus {
+  opacity: 0.5;
+}
+
+.calculator__min-max {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13px;
+}
+
+.calculator__label,
+.calculator__min-price,
+.calculator__max-price,
+.calculator__buttons-text {
+  font-size: 15px;
+  line-height: 18px;
+  color: $card-color;
+}
+
+.calculator__buttons-text {
+  margin-top: 30px;
+  margin-bottom: 16px;
+}
+
+.calculator__button {
+  color: $calc-buttons;
+  background-color: $black;
+}
+
+.calculator__button--active {
+  color: $calc-buttons-active;
+  background-color: $white;
+  transform: translateX(40px);
+}
+
+.calculator__button,
+.calculator__button--active {
+  border-radius: 27px;
+  border: none;
+  cursor: pointer;
+}
+
+.calculator__button-up {
+  padding: 18px 73px;
+}
+
+.calculator__button-bottom {
+  padding: 18px 47px;
+}
+
+.calculator__button:hover,
+.calculator__button--active:hover,
+.calculator__button:focus,
+.calculator__button--active:focus {
+  color: $orange;
+}
+
+.calculator__buttons-top,
+.calculator__buttons-bottom {
+  transform: translateX(-40px);
+  display: flex;
+}
+
+.calculator__controls {
+  position: relative;
+  background-color: $dark-grey;
+  margin-bottom: 17px;
+}
+
+.calculator__bar {
+  height: 5px;
+  background: $orange;
+  width: 100%;
+  margin-left: 0;
+  border-radius: 16px;
+}
+
+.calculator__toggle {
+  position: absolute;
+  top: -5px;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-color: $orange;
+  border-radius: 50%;
+  cursor: pointer;
+  left: 40%;
+  border: 1px solid $orange;
+  box-shadow: 0 2px 2px rgba(255, 255, 255, 0.3);
+}
