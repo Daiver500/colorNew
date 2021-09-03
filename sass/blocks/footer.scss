@@ -1,0 +1,211 @@
+.footer__inner {
+  padding: 72px 49px 113px 45px;
+  max-width: 1350px;
+}
+
+.footer__logo {
+  width: 168px;
+  height: 63px;
+  margin-bottom: 23px;
+}
+
+.footer__information {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 62px;
+}
+
+.social-footer__link {
+  min-width: 37px;
+  height: 37px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  border: 3px solid #000;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+}
+
+.social-footer__link:hover,
+.social-footer__link:focus {
+  opacity: 1;
+}
+
+.social-footer svg {
+  color: $black;
+}
+
+.footer__phone,
+.footer__title,
+.footer__mail {
+  margin-top: 0;
+}
+
+.footer__phone {
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 27px;
+  margin-bottom: 7px;
+}
+
+.footer__title {
+  font-size: 13px;
+  line-height: 19px;
+  color: $card-color;
+  margin-bottom: 29px;
+}
+
+.footer__mail {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  color: $orange;
+}
+
+.footer__finances {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-gap: 100px;
+}
+
+.footer__finances,
+.footer__docs {
+  margin-top: 15px;
+}
+
+.footer__docs {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.footer__borrowers,
+.footer__business {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.borrowers__link,
+.business__link {
+  line-height: 22px;
+  font-size: 15px;
+  color: $card-color;
+}
+
+.borrowers__header,
+.business__header,
+.docs__link {
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-weight: 600;
+  line-height: 18px;
+  font-size: 18px;
+}
+
+.docs__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.borrowers__item:not(:last-child),
+.business__item:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.docs__link {
+  color: $white;
+}
+
+.footer__bottom {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.bottom__title {
+  max-width: 620px;
+}
+
+.bottom__form {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10%;
+}
+
+.bottom__button {
+  position: absolute;
+  right: -42px;
+  top: 76px;
+  padding: 17px 40px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 15px;
+  text-transform: uppercase;
+  background-color: #ff970a;
+  color: #000;
+  border: none;
+  border-radius: 27px;
+}
+
+.bottom__text {
+  margin: 0;
+  font-size: 15px;
+  line-height: 22px;
+  color: $card-color;
+  margin-top: 25px;
+}
+
+.bottom__name {
+  margin-bottom: 22px;
+}
+
+.bottom__name,
+.bottom__phone {
+  color: $button;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 17px 26px;
+  border-radius: 30px;
+  background-color: $dark-grey;
+  border: none;
+  width: 100%;
+}
+
+@media (max-width: 1130px) {
+  .bottom__title {
+    max-width: 500px;
+  }
+
+  .bottom__form {
+    padding-right: 15%;
+  }
+}
+
+@media (max-width: 1130px) {
+  .footer__finances {
+    grid-gap: 30px;
+  }
+
+  .footer__phone {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 22px;
+  }
+}

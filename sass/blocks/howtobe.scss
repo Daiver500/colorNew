@@ -3,7 +3,7 @@
 }
 
 .howtobe__inner {
-  padding: 40px 127px 81px 60px;
+  padding: 40px 127px 81px 130px;
 }
 
 .howtobe__header {
@@ -20,7 +20,7 @@
   margin-top: 0;
   margin-bottom: 77px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   //grid-template-columns: max-content max-content max-content max-content;
   grid-column-gap: 85px;
   grid-row-gap: 20px;
