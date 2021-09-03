@@ -162,6 +162,12 @@
   color: #000;
   border: none;
   border-radius: 27px;
+  cursor: pointer;
+}
+
+.bottom__button:hover,
+.bottom__button:focus {
+  background-color: $white;
 }
 
 .bottom__text {
