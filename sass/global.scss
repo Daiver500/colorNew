@@ -32,6 +32,24 @@ img {
   display: none;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
+.scroll {
+  overflow: scroll;
+  height: 100vh;
+  background-color: $bg;
+}
+
+.navigation-open-color {
+  background-color: $bg;
+}
+
+.show {
+  display: block;
+}
+
 body {
   font-family: "sf", "Arial", sans-serif;
   font-size: 16px;
@@ -58,6 +76,14 @@ body {
   background-position: 50% 0;
   background-repeat: no-repeat;
   //margin-top: -110px;
+}
+
+@media (max-width: $max-tablet-width) {
+  .page {
+    background-image: url("img/main-bg-image-mobile.jpg");
+    background-size: 100%;
+    background-position: 50% 166px;
+  }
 }
 
 .page__button {
