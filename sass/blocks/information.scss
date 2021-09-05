@@ -102,3 +102,34 @@
   left: 80%;
 }
 
+@media (max-width: $max-tablet-width) {
+  .information {
+    margin-bottom: 100px;
+  }
+
+  .information__inner {
+    background-image: none;
+    padding-left: 7%;
+    padding-right: 5%;
+  }
+
+  .information__quantity {
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+
+  .information__title {
+    margin-bottom: 5px;
+  }
+
+  .information__title p {
+    font-weight: 600;
+    font-size: 94px;
+    line-height: 99px;
+  }
+
+  .information__text {
+    padding-top: 0;
+    max-width: 365px;
+  }
+}

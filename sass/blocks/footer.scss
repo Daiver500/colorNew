@@ -215,3 +215,44 @@
     line-height: 22px;
   }
 }
+
+@media (max-width: $max-tablet-width) {
+  .footer__inner {
+    padding: 20px;
+  }
+
+  .footer__information {
+    margin-bottom: 25px;
+  }
+
+  .footer__finances {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom__title {
+    max-width: 380px;
+    padding-right: 20px;
+  }
+
+  .bottom__text {
+    margin-top: 15px;
+  }
+
+  .bottom__name {
+    margin-bottom: 10px;
+  }
+
+  .bottom__form {
+    padding-right: 0;
+  }
+
+  .footer__bottom {
+    justify-content: unset;
+  }
+
+  .bottom__button {
+    right: 0px;
+    top: 65px;
+    padding: 17px 30px;
+  }
+}

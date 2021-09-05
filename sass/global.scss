@@ -80,9 +80,9 @@ body {
 
 @media (max-width: $max-tablet-width) {
   .page {
-    background-image: url("img/main-bg-image-mobile.jpg");
-    background-size: 100%;
-    background-position: 50% 166px;
+    background-image: url("img/main-bg-image-tablet.jpg");
+    background-size: auto;
+    background-position: 50% 354px;
   }
 }
 

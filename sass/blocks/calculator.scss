@@ -238,3 +238,42 @@
   border: 1px solid $light-grey;
   text-align: center;
 }
+
+@media (max-width: $max-tablet-width) {
+  .calculator {
+    margin-bottom: 30px;
+  }
+
+  .calculator__header {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 72px;
+  }
+
+  .calculator__information {
+    flex-direction: column;
+  }
+
+  .calculator__input {
+    margin-bottom: 50px;
+  }
+
+  .calculator__numbers {
+    margin-top: 50px;
+    max-height: unset;
+  }
+
+  .calculator__toggles {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .numbers__button-consult {
+    padding: 17px 29px;
+    max-width: 100%;
+  }
+
+  .calculator__numbers::after {
+    min-width: 80%;
+  }
+}

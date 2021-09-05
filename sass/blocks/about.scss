@@ -131,6 +131,39 @@
   line-height: 15px;
 }
 
+@media (max-width: $max-tablet-width) {
+  .about {
+    margin-bottom: 19px;
+  }
+
+  .about__inner {
+    padding-right: 7%;
+    padding-left: 5%;
+    position: relative;
+  }
+
+  .about__title {
+    font-weight: 600;
+    font-size: 57px;
+    line-height: 66px;
+    max-width: 528px;
+  }
+
+  .about__social {
+    display: none;
+  }
+
+  .about__information {
+    margin-bottom: 365px;
+  }
+
+  .about__video {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
 @keyframes shake {
   0%,
   100% {

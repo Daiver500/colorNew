@@ -111,3 +111,50 @@
   color: $light-grey;
   border: 1px solid $light-grey;
 }
+
+@media (max-width: $max-tablet-width) {
+  .howtobe {
+    margin-bottom: 0;
+  }
+
+  .howtobe__header {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 72px;
+    margin-bottom: 40px;
+  }
+
+  .howtobe__inner {
+    padding: 40px 7% 81px 5%;
+  }
+
+  .howtobe__list {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .howtobe__image {
+    max-height: 90px;
+    max-width: 90px;
+  }
+
+  .howtobe__item:not(:last-child)::after {
+    left: 94%;
+    top: 39px;
+  }
+
+  .howtobe__text {
+    max-width: 140px;
+  }
+
+  .howtobe__buttons {
+    flex-direction: column;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .howtobe__button-request {
+    margin-bottom: 20px;
+  }
+}
