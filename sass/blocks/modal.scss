@@ -11,6 +11,7 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   z-index: 2;
   background-color: $white;
+  border-radius: 30px;
 }
 
 .modal__inner {
@@ -53,7 +54,6 @@
 
 .modal__header {
   margin-bottom: 20px;
-  font-family: "PTMono", "Arial", sans-serif;
   font-size: 28px;
   line-height: 39px;
   color: $black;
@@ -82,17 +82,17 @@
 }
 
 .modal__button {
-  font-family: "PTMono", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  color: $white;
+  font-size: 19px;
+  line-height: 22px;
+  color: $black;
   text-transform: uppercase;
-  background-color: $black;
-  border: 1px solid $black;
+  background-color: $orange;
+  border: none;
   padding: 14px 45px;
   cursor: pointer;
   margin-bottom: 34px;
+  border-radius: 15px;
+  height: 50px;
 }
 
 .modal__button:hover,
@@ -123,8 +123,8 @@
 }
 
 .modal-success__image {
-  width: 80px;
-  height: 80px;
+  width: 40px;
+  height: 60px;
   margin-bottom: 20px;
 }
 
