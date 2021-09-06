@@ -251,8 +251,146 @@
   }
 
   .bottom__button {
-    right: 0px;
+    right: 0;
     top: 65px;
     padding: 17px 30px;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .footer__inner {
+    padding: 62px 15px 74px 18px;
+  }
+
+  .footer__information {
+    flex-direction: column;
+    margin-bottom: 45px;
+  }
+
+  .footer__contacts {
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .footer__logo {
+    width: 121px;
+    height: 45px;
+    margin-bottom: 16px;
+  }
+
+  .footer__list {
+    margin-bottom: 28px;
+  }
+
+  .social-footer__item:not(:last-child) {
+    padding-right: 18px;
+  }
+
+  .social-footer__link {
+    min-width: 28px;
+    height: 28px;
+  }
+
+  .social-footer svg {
+    width: 19px;
+    height: 13px;
+  }
+
+  .footer__phone,
+  .footer__title,
+  .footer__mail {
+    text-align: center;
+  }
+
+  .footer__phone {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 2px;
+  }
+
+  .footer__title {
+    margin-bottom: 26px;
+  }
+
+  .footer__mail {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 0;
+  }
+
+  .footer__finances {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 0;
+    margin-bottom: 45px;
+  }
+
+  .borrowers__header,
+  .business__header {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .borrowers__link,
+  .business__link {
+    line-height: 19px;
+    font-size: 13px;
+  }
+
+  .footer__docs {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 17px;
+    grid-row-gap: 27px;
+  }
+
+  .docs__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .docs__item:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+  }
+
+  .docs__item:nth-child(3) {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+  }
+
+  .footer__bottom {
+    flex-direction: column-reverse;
+  }
+
+  .bottom__button {
+    position: relative;
+    top: 0;
+    padding: 15px 37px;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 600;
+    max-width: 195px;
+  }
+
+  .bottom__name {
+    margin-bottom: 0;
+  }
+
+  .bottom__label {
+    margin-bottom: 11px;
+  }
+
+  .bottom__form {
+    margin-bottom: 42px;
+  }
+
+  .bottom__text {
+    margin-top: 0;
+    font-size: 11px;
+    line-height: 16px;
   }
 }

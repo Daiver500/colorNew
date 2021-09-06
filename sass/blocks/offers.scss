@@ -161,6 +161,11 @@
   font-weight: 700;
 }
 
+.profit__text-mobile,
+.profit__price-mobile {
+  display: none;
+}
+
 .offers__offer {
   margin: 0;
   background-color: $dark-grey;
@@ -330,5 +335,142 @@
 
   .offers__buttons-top {
     display: flex;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .offers {
+    margin-bottom: 37px;
+  }
+
+  .offers__inner {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .offers__desktop-header {
+    margin-bottom: 42px;
+    font-size: 25px;
+    line-height: 32px;
+  }
+
+  .offers__button-top {
+    //max-width: 200px;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 12px;
+    line-height: 13px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    min-width: 147px;
+  }
+
+  .offers__desktop-card {
+    border-radius: 0;
+    margin-right: 0;
+    padding-left: 13px;
+    padding-right: 16px;
+  }
+
+  .offers__select {
+    font-size: 13px;
+    line-height: 12px;
+  }
+
+  .offers__label::after {
+    left: 88%;
+    top: 16px;
+  }
+
+  .offers__label {
+    margin-bottom: 21px;
+  }
+
+  .offers__title {
+    margin-bottom: 3px;
+    font-size: 11px;
+    line-height: 10px;
+  }
+
+  .offers__text {
+    font-size: 13px;
+    line-height: 19px;
+    max-width: 365px;
+  }
+
+  .offers__profit {
+    margin-top: 20px;
+    padding: 26px 28px 24px 17px;
+    display: flex;
+    position: relative;
+    min-height: 405px;
+  }
+
+  .offers__profit::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    border: 1px solid $card-color;
+    min-width: 220px;
+    top: 59px;
+    left: 8px;
+  }
+
+  .offers__offer {
+    position: absolute;
+    bottom: 24px;
+    transform: translateX(-50%);
+    left: 50%;
+    min-width: 243px;
+    font-size: 13px;
+    line-height: 16px;
+    padding-left: 17px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  .profit__list {
+    flex-direction: column;
+    display: flex;
+    width: 50%;
+  }
+
+  .profit__text,
+  .profit__price {
+    display: none;
+  }
+
+  .profit__text-mobile,
+  .profit__price-mobile,
+  .profit__text-desktop {
+    display: block;
+  }
+
+  .profit__text-mobile,
+  .profit__price-mobile {
+    margin: 0;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .profit__header {
+    margin-bottom: 31px;
+  }
+
+  .profit__item:not(:first-child) {
+    margin-bottom: 20px;
+  }
+
+  .item {
+    padding-bottom: 42px;
+    display: flex;
+    min-width: 140px;
+    margin-bottom: 0;
+  }
+
+  .offers__button-main {
+    transform: translateX(-50%);
+    left: 50%;
   }
 }

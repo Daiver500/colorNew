@@ -203,11 +203,15 @@
 
 @media (max-width: $max-mobile-width) {
   .modal__inner,
-  .modal-success__inner,
   .modal__data,
   .modal__label::after,
   .modal__text {
     max-width: 100%;
+  }
+
+  .modal-success__inner {
+    max-width: 100%;
+    width: 100%;
   }
 
   .modal__form {

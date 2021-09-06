@@ -158,3 +158,77 @@
     margin-bottom: 20px;
   }
 }
+
+@media (max-width: $max-mobile-width) {
+  .howtobe__inner {
+    padding: 44px 14px 46px 18px;
+  }
+
+  .howtobe__header {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  .howtobe__list {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .howtobe__item {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .howtobe__item:not(:last-child) {
+    margin-bottom: 47px;
+  }
+
+  .howtobe__text {
+    font-size: 16px;
+    line-height: 23px;
+    min-width: 183px;
+    text-align: left;
+  }
+
+  .howtobe__image {
+    margin-bottom: 0;
+    width: 60px;
+    height: 60px;
+    margin-right: 34px;
+  }
+
+  .howtobe__item:not(:last-child)::after {
+    left: 8%;
+    top: 82px;
+    background-image: url("img/arrow-down.svg");
+  }
+
+  .howtobe__buttons {
+    align-items: center;
+  }
+
+  .howtobe__button {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 15px 43px;
+    max-width: 196px;
+  }
+
+  .howtobe__button-request::after {
+    left: 80%;
+    top: 15px;
+    width: 19px;
+    height: 11px;
+    background-image: url("img/arrow-right-button-mobile.svg");
+  }
+
+  .howtobe__button-docs {
+    font-size: 12px;
+    line-height: 13px;
+    padding: 8px 24px;
+    max-width: 196px;
+  }
+}

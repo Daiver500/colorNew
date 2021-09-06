@@ -224,39 +224,46 @@
                   </li>
                   <li class="profit__item">
                     <p class="profit__title">12%</p>
-                    <p class="profit__text">годовых</p>
+                    <p class="profit__text profit__text-desktop">годовых</p>
                   </li>
                   <li class="profit__item">
                     <p class="profit__title">14%</p>
-                    <p class="profit__text">годовых</p>
+                    <p class="profit__text profit__text-desktop">годовых</p>
                   </li>
                   <li class="profit__item">
                     <p class="profit__title">16%</p>
-                    <p class="profit__text">годовых</p>
+                    <p class="profit__text profit__text-desktop">годовых</p>
                   </li>
                   <li class="profit__item">
                     <p class="profit__title">18%</p>
-                    <p class="profit__text">годовых</p>
+                    <p class="profit__text profit__text-desktop">годовых</p>
                   </li>
                 </ul>
                 <ul class="profit__list">
                   <li class="profit__item">
                     <p class="profit__header">Вклад:</p>
                   </li>
-                  <li class="profit__item">
+                  <li class="profit__item item">
                     <p class="profit__price">от 100 тыс </p>
                     <p class="profit__text">до 249 тыс</p>
+                    <p class="profit__price-mobile"> 100 тыс - </p>
+                    <p class="profit__text-mobile"> 249 тыс</p>
                   </li>
-                  <li class="profit__item">
+                  <li class="profit__item item">
                     <p class="profit__price">от 250 тыс </p>
                     <p class="profit__text">до 499 тыс</p>
+                    <p class="profit__price-mobile"> 250 тыс -</p>
+                    <p class="profit__text-mobile"> 499 тыс</p>
                   </li>
-                  <li class="profit__item">
+                  <li class="profit__item item">
                     <p class="profit__price">от 500 тыс </p>
                     <p class="profit__text">до 1 млн</p>
+                    <p class="profit__price-mobile"> 500 тыс - </p>
+                    <p class="profit__text-mobile"> 1 млн</p>
                   </li>
-                  <li class="profit__item">
+                  <li class="profit__item item">
                     <p class="profit__price">от 1 млн</p>
+                    <p class="profit__price-mobile">от 1 млн</p>
                   </li>
                 </ul>
                 <p class="offers__offer">Если срок менее 1 года, то доходность уменьшается на 1%</p>
@@ -434,7 +441,7 @@
               <label class="calculator__label">
                 Сумма сбережений
 
-              <input class="calculator__summ" type="text" min="1" max="300" name="summ" placeholder="2 050 000" />
+              <input class="calculator__summ" type="text" min="100 000" max="5 000 000" name="summ" placeholder="2 050 000" />
               <div class="calculator__controls">
                 <div class="calculator__scale">
                   <div class="calculator__bar"></div>
@@ -695,7 +702,7 @@
 
     </div>
   </footer>
-  <section class="modal hidden">
+  <section class="modal">
     <div class="modal__inner">
       <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="modal__data">
@@ -729,7 +736,7 @@
 
     </div>
   </section>
-  <section class="modal-success hidden">
+  <section class="modal-success">
     <div class="modal-success__inner">
       <div class="modal-success__title">
         <img class="modal-success__image" src="img/logo-mobile.png" alt="логотип">

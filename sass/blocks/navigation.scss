@@ -1,6 +1,18 @@
 .navigation {
   margin-top: 5px;
   margin-bottom: 115px;
+  position: relative;
+}
+
+.navigation::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  border: 1px solid $light-grey;
+  width: 1440px;
+  bottom: -5px;
+  transform: translateX(-50%);
+  left: 50%;
 }
 
 .navigation__inner {
@@ -185,7 +197,7 @@
     max-width: 100%;
     background-color: $black;
     border-top: 1px solid #000;
-    display: none;
+    //display: none;
   }
 
   .navigation__item {
@@ -203,5 +215,29 @@
 
   .navigation__item:last-child {
     border-bottom: none;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .navigation {
+    margin-bottom: 24px;
+  }
+
+  .navigation__inner {
+    padding: 10px 23px;
+  }
+
+  .navigation__logo {
+    width: 28px;
+    height: 41px;
+  }
+
+  .navigation__toggles {
+    padding-right: 32px;
+  }
+
+  .navigation__toggle svg {
+    width: 14px;
+    height: 14px;
   }
 }

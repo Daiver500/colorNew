@@ -8,7 +8,7 @@
   padding-left: 94px;
   padding-right: 50px;
   background-image: url("img/piramids.jpg");
-  background-size: 21vw;
+  background-size: auto;
   background-position: 90% 108%;
   background-repeat: no-repeat;
 }
@@ -131,5 +131,75 @@
   .information__text {
     padding-top: 0;
     max-width: 365px;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .information {
+    margin-bottom: 70px;
+    position: relative;
+  }
+
+  .information::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    border: 1px solid $card-color;
+    width: 100%;
+    bottom: -37px;
+  }
+
+  .information__inner {
+    padding-left: 18px;
+    padding-right: 17px;
+  }
+
+  .information__title {
+    padding-right: 0;
+  }
+
+  .information__title p {
+    font-size: 44px;
+    line-height: 44px;
+    font-weight: 700;
+  }
+
+  .information__text p {
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  .information__header {
+    margin-bottom: 10px;
+  }
+
+  .information__header p {
+    font-size: 10px;
+    line-height: 10px;
+    font-weight: 700;
+  }
+
+  .information__list-title {
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+
+  .information__list-text {
+    font-size: 10px;
+    line-height: 10px;
+    max-width: 72px;
+  }
+
+  .information__list-text::after {
+    left: 81%;
+    top: 0;
+    width: 27px;
+    height: 25px;
+  }
+
+  .information__item:last-child .information__list-text::after {
+    left: 98%;
   }
 }

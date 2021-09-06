@@ -66,23 +66,34 @@ body {
   display: none;
 }
 
-.main {
-  flex-grow: 1;
-}
-
 .page {
   background-image: url("img/main-bg-image-desktop.jpg");
   background-size: auto;
   background-position: 50% 0;
   background-repeat: no-repeat;
-  //margin-top: -110px;
+  flex-grow: 1;
 }
 
 @media (max-width: $max-tablet-width) {
   .page {
+    background-image: unset;
+  }
+}
+
+@media (max-width: $max-tablet-width) {
+  .main {
     background-image: url("img/main-bg-image-tablet.jpg");
     background-size: auto;
-    background-position: 50% 354px;
+    background-position: 50% 209px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .main {
+    background-image: url("img/main-bg-image-mobile.jpg");
+    background-size: auto;
+    background-position: 50% 90px;
   }
 }
 
