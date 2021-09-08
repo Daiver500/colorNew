@@ -24,7 +24,7 @@
           </a>
           <ul class="navigation__list">
             <li class="navigation__item"><a class="navigation__link navigation__link--active"
-                href="blank.html">Инвестиции</a></li>
+                href="#">Инвестиции</a></li>
             <li class="navigation__item"><a class="navigation__link" href="blank.html" target="_blank">Займы</a></li>
             <li class="navigation__item"><a class="navigation__link" href="blank.html" target="_blank">Реферальная
                 программа</a></li>
@@ -539,7 +539,7 @@
         </ul>
         <div class="howtobe__buttons">
           <button type="button" class="button howtobe__button howtobe__button-request">Оставить заявку</button>
-          <a href="#" class="howtobe__button howtobe__button-docs">Необходимые документы</a>
+          <a target="_blank" href="docs.docx" class="howtobe__button howtobe__button-docs">Необходимые документы</a>
         </div>
       </div>
     </section>
@@ -554,7 +554,7 @@
 
         <div class="reviews__header">
           <h2 class="reviews__header-main">Отвызы инвесторов</h2>
-          <a class="reviews__link" href="#" target="_blank">Больше отзывов</a>
+          <a class="reviews__link" href="blank.html" target="_blank">Больше отзывов</a>
         </div>
         <div class="reviews__videos">
           <div class="reviews__information">
@@ -589,7 +589,7 @@
               стоимость минимум в 2 раза выше суммы инвестиций, что перекрывает риски </p>
           </div>
 
-            <button class="guarantees__button" type="button">Получить консультацию</button>
+            <button class="guarantees__button button" type="button">Получить консультацию</button>
 
         </div>
         </div>
@@ -702,7 +702,7 @@
 
     </div>
   </footer>
-  <section class="modal">
+  <section class="modal hidden">
     <div class="modal__inner">
       <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="modal__data">
@@ -715,12 +715,10 @@
           </button>
           <h2 class="modal__header">Закажите звонок</h2>
           <label class="modal__label"> <span class="visually-hidden">Имя</span>
-            <input class="modal__name" pattern="^[а-яёА-ЯЁ\s]+$" type="text" name="text" placeholder="Имя*" required
-              oninvalid="setCustomValidity('Введите имя на кириллице')" oninput="setCustomValidity('')">
+            <input class="modal__name" pattern="^[а-яёА-ЯЁ\s]+$" type="text" name="text" placeholder="Имя*">
           </label>
           <label class="modal__label"> <span class="visually-hidden">Телефон</span>
-            <input class="modal__phone" type="text" name="telephone" id="phone-modal" placeholder="Номер телефона*"
-              required oninvalid="setCustomValidity('Введите 10 цифр')" oninput="setCustomValidity('')" />
+            <input class="modal__phone" type="text" name="telephone" id="phone-modal" placeholder="Номер телефона*"/>
           </label>
           <label class="modal__label"> <span class="visually-hidden">Электронная почта</span>
             <input class="modal__mail" type="email" name="email" id="email" placeholder="Электронная почта" />
@@ -736,7 +734,7 @@
 
     </div>
   </section>
-  <section class="modal-success">
+  <section class="modal-success hidden">
     <div class="modal-success__inner">
       <div class="modal-success__title">
         <img class="modal-success__image" src="img/logo-mobile.png" alt="логотип">

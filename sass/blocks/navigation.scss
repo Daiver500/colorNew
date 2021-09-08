@@ -9,7 +9,7 @@
   position: absolute;
   background-repeat: no-repeat;
   border: 1px solid $light-grey;
-  width: 1440px;
+  width: 100%;
   bottom: -5px;
   transform: translateX(-50%);
   left: 50%;
@@ -116,9 +116,18 @@
   color: $white;
 }
 
+.navigation__link--active {
+  color: $orange;
+}
+
 .navigation__link:hover,
 .navigation__link:focus {
   opacity: 0.5;
+}
+
+.navigation__link--active:hover,
+.navigation__link--active:focus {
+  opacity: 1;
 }
 
 @media (max-width: 1270px) {
