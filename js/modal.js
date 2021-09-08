@@ -1,6 +1,6 @@
 "use strict";
 
-const modalButtons = document.querySelectorAll(`.button`);
+const openModalButtons = document.querySelectorAll(`.button`);
 const modal = document.querySelector(`.modal`);
 const body = document.querySelector(`.page`);
 const modalCloseButton = document.querySelector(`.modal__close`);
@@ -19,7 +19,7 @@ const escPressHandler = (evt) => {
   }
 };
 
-const windowPressHanlder = (evt) => {
+const windowClickHanlder = (evt) => {
   const target = evt.target;
   if (target === modal) {
     closeModal();
@@ -29,19 +29,20 @@ const windowPressHanlder = (evt) => {
 const openModal = () => {
   modal.classList.remove(`hidden`);
   inputFocus();
-  document.addEventListener(`click`, windowPressHanlder);
+  document.addEventListener(`click`, windowClickHanlder);
   document.addEventListener(`keydown`, escPressHandler);
   body.classList.add(`no-scroll`);
 };
 
 const closeModal = () => {
   modal.classList.add(`hidden`);
-  document.removeEventListener(`click`, windowPressHanlder);
+  document.removeEventListener(`click`, windowClickHanlder);
   document.removeEventListener(`keypress`, escPressHandler);
   body.classList.remove(`no-scroll`);
+  modalPhone.value = ``;
 };
 
-modalButtons.forEach((item) => {
+openModalButtons.forEach((item) => {
   item.addEventListener(`click`, openModal);
 });
 
@@ -55,7 +56,7 @@ const modalSuccessEscPressHandler = (evt) => {
   }
 };
 
-const windowSuccessPressHanlder = (evt) => {
+const windowSuccessClickHanlder = (evt) => {
   const target = evt.target;
   if (target === modalSuccess) {
     closeModalSuccess();
@@ -65,14 +66,14 @@ const windowSuccessPressHanlder = (evt) => {
 const openModalSuccess = () => {
   closeModal();
   modalSuccess.classList.remove(`hidden`);
-  document.addEventListener(`click`, windowSuccessPressHanlder);
+  document.addEventListener(`click`, windowSuccessClickHanlder);
   document.addEventListener(`keydown`, modalSuccessEscPressHandler);
   body.classList.add(`no-scroll`);
 };
 
 const closeModalSuccess = () => {
   modalSuccess.classList.add(`hidden`);
-  document.removeEventListener(`click`, windowSuccessPressHanlder);
+  document.removeEventListener(`click`, windowSuccessClickHanlder);
   document.removeEventListener(`keypress`, modalSuccessEscPressHandler);
   body.classList.remove(`no-scroll`);
 };
@@ -81,23 +82,11 @@ if (modalSuccessCloseButton) {
   modalSuccessCloseButton.addEventListener("click", closeModalSuccess);
 }
 
-
 modalForm.addEventListener(`submit`, function (evt) {
   evt.preventDefault();
-  formValue();
   localStorageSet();
-  modalPhone.value = ``;
-  modalName.value = ``;
-  //openModalSuccess();
+  openModalSuccess();
 });
-
-const formValue = () => {
-  if (modalName.value.length === 0) {
-    modalName.setCustomValidity(`Номер должен быть из 10 цифр`);
-    modalName.reportValidity();
-  }
-  modalName.reportValidity();
-};
 
 // Маска
 
@@ -130,18 +119,10 @@ try {
   isStorageSupport = false;
 }
 
-const localStorageSet = (evt) => {
-  if (!modalName || !modalPhone) {
-    evt.preventDefault();
-    modalName.setCustomValidity(`Нужно ввести`);
-    modalPhone.setCustomValidity(`Нужно ввести телефон`);
-  } else {
-    if (isStorageSupport) {
-      localStorage.setItem(`login`, modalName.value);
-    }
+const localStorageSet = () => {
+  if (isStorageSupport) {
+    localStorage.setItem(`login`, modalName.value);
   }
-  modalName.reportValidity();
-  modalPhone.reportValidity();
 };
 
 const inputFocus = () => {
