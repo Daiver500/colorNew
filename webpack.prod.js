@@ -5,7 +5,8 @@ module.exports = {
   mode: "development",
   entry: [
     "./js/index.js",
-    "./js/modal.js"
+    "./js/modal.js",
+    "./js/validation.js"
   ],
   output: {
     filename: "bundle.js",
