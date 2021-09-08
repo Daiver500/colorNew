@@ -1,7 +1,7 @@
 "use strict";
 
 const LETTERS_MAX = 50;
-const REG_EXP = /^#([а-яА-Я]|[a-zA-Z]|[0-9]){1,20}$/;
+const REG_EXP = /^#([а-яА-Я]|[a-zA-Z])$/;
 
 const userMessage = {
   LESS_THEN_FIVE: `Нельзя указать больше пяти хэш-тегов`,
