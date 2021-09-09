@@ -6,7 +6,7 @@ module.exports = {
   watch: true,
   entry: [
     "./js/index.js",
-    "./js/modal.js"
+    "./js/modal.js",
   ],
   output: {
     filename: "bundle.js",
