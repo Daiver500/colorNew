@@ -689,8 +689,8 @@
         </div>
         <form class="bottom__form">
           <label class="bottom__label"> <span class="visually-hidden">Имя</span>
-            <input class="bottom__name" pattern="^[а-яёА-ЯЁ\s]+$" type="text" name="text" placeholder="Имя*" required
-              oninvalid="setCustomValidity('Введите имя на кириллице')" oninput="setCustomValidity('')">
+            <input class="bottom__name" pattern="^[A-zА-яЁё]+$" type="text" name="text" placeholder="Имя*" required
+              oninvalid="setCustomValidity('Введите имя на кириллице или латинице')" oninput="setCustomValidity('')">
           </label>
           <label class="bottom__label"> <span class="visually-hidden">Телефон</span>
             <input class="bottom__phone" type="text" name="telephone" id="phone" placeholder="Номер телефона*" required
