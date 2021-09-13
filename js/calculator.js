@@ -5,7 +5,6 @@ const calculatorButtonUp = document.querySelectorAll(`.calculator__button-up`);
 const calculatorButtonBottom = document.querySelectorAll(`.calculator__button-bottom`);
 const calculatorButtonsTop = document.querySelector(`.calculator__buttons-top`);
 const calculatorButtonsBottom = document.querySelector(`.calculator__buttons-bottom`);
-let calculatorProfitPercent = document.querySelector(`.calculator__text-percent`);
 let monthlyResult = document.querySelector(`.calculator__text-month`);
 let yearResult = document.querySelector(`.calculator__text-year`);
 
@@ -115,3 +114,46 @@ SIX_MONTHS.addEventListener("click", getSixMonthResult);
 TWELVE__MONTHS.addEventListener("click", getTwelveMonthResult);
 AT_THE_END_PAYMENT.addEventListener("click", getAtTheEndResult);
 MONTLY_PAYMENT.addEventListener("click", getMonthlyPaymentResult);
+
+
+const calculatorControls = document.querySelector(".calculator__controls");
+const calculatorToggle = calculatorControls.querySelector(".calculator__toggle");
+const start = -2;
+const end = 374;
+
+calculatorToggle.addEventListener('mousedown', function (evt) {
+  evt.preventDefault();
+
+  let startCoords = {
+    x: evt.clientX,
+  };
+
+  const onMouseMove = function (moveEvt) {
+    moveEvt.preventDefault();
+
+    let shift = {
+      x: startCoords.x - moveEvt.clientX,
+    };
+
+    startCoords = {
+      x: moveEvt.clientX,
+    };
+
+    const toggleX = calculatorToggle.offsetLeft - shift.x;
+
+    if (!(toggleX < start || toggleX >= end)) {
+      calculatorToggle.style.left = toggleX + `px`;
+    }
+  };
+
+  const onMouseUp = function (upEvt) {
+    upEvt.preventDefault();
+
+    document.removeEventListener('mousemove', onMouseMove);
+    document.removeEventListener('mouseup', onMouseUp);
+  };
+
+  document.addEventListener('mousemove', onMouseMove);
+  document.addEventListener('mouseup', onMouseUp);
+});
+
