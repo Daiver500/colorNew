@@ -530,7 +530,7 @@
               <label class="calculator__label">
                 Сумма сбережений
 
-              <input class="calculator__summ" type="text" min="100 000" max="5 000 000" name="summ" placeholder="2 050 000" />
+              <input class="calculator__summ" type="number" pattern="^[0-9]+$" min="100000" max="5000000" name="summ" id="calculator__input" />
               <div class="calculator__controls">
                 <div class="calculator__scale">
                   <div class="calculator__bar"></div>
@@ -548,29 +548,29 @@
             <div class="calculator__buttons">
               <p class="calculator__buttons-text">Срок</p>
               <div class="calculator__buttons-top">
-                <button class="calculator__button calculator__button-up calculator__button--active">6 мес</button>
-                <button class="calculator__button calculator__button-up">12 мес</button>
+                <button class="calculator__button-top-first calculator__button calculator__button-up calculator__button--active" id="six-months">6 мес</button>
+                <button class="calculator__button calculator__button-up" id="twelve-months">12 мес</button>
               </div>
               <p class="calculator__buttons-text">Выплаты</p>
               <div class="calculator__buttons-bottom">
-                <button class="calculator__button calculator__button-bottom calculator__button--active">В конце срока</button>
-                <button class="calculator__button calculator__button-bottom">Ежемесячно</button>
+                <button class="calculator__button-bottom-first calculator__button calculator__button-bottom calculator__button--active" id="at-the-end">В конце срока</button>
+                <button class="calculator__button calculator__button-bottom" id="monthly">Ежемесячно</button>
               </div>
             </div>
           </div>
           <div class="calculator__numbers">
             <div class="calculator__item">
               <p class="calculator__title">Ежемесячное начисление</p>
-              <p class="calculator__text calculator__text-main">22 208 ₽ </p>
+              <p class="calculator__text calculator__text-main calculator__text-month">0 ₽ </p>
             </div>
             <div class="calculator__profit">
               <div class="calculator__item">
                 <p class="calculator__title">Доход</p>
-                <p class="calculator__text">13%</p>
+                <p class="calculator__text calculator__text-percent">15%</p>
               </div>
               <div class="calculator__item">
                 <p class="calculator__title">Ежегодное начисление</p>
-                <p class="calculator__text">316 500 ₽</p>
+                <p class="calculator__text calculator__text-year">0 ₽</p>
               </div>
             </div>
             <div class="calculator__toggles numbers">

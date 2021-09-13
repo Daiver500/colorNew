@@ -7,7 +7,8 @@ module.exports = {
     "./js/index.js",
     "./js/modal.js",
     "./js/menu.js",
-    "./js/offers.js"
+    "./js/offers.js",
+    "./js/calculator.js"
   ],
   output: {
     filename: "bundle.js",

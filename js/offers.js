@@ -39,7 +39,7 @@ offersButtonsParent.addEventListener(`click`, (evt) => {
 });
 
 
-const hideContentTest = () => {
+const hideContentSecondCard = () => {
   offersPercentsCards.forEach((item) => {
     item.classList.add(`hidden`);
     item.classList.remove(`offers__percents--active`);
@@ -50,22 +50,22 @@ const hideContentTest = () => {
 };
 
 
-const showContentTest = (i = 0) => {
+const showContentSecondCard = (i = 0) => {
   offersPercentsCards[i].classList.remove("hidden");
   offersPercentsCards[i].classList.add("offers__percents--active");
   offersButtonsPercent[i].classList.add(`offers__button--active`);
 };
 
-hideContentTest();
-showContentTest();
+hideContentSecondCard();
+showContentSecondCard();
 
 offersButtonsPercentsParent.addEventListener(`click`, (evt) => {
   const target = evt.target;
   if (target && target.classList.contains(`offers__button-percent`)) {
     offersButtonsPercent.forEach((item, i) => {
       if (target === item) {
-        hideContentTest();
-        showContentTest(i);
+        hideContentSecondCard();
+        showContentSecondCard(i);
       }
     });
   }
