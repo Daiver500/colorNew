@@ -6,7 +6,8 @@ module.exports = {
   entry: [
     "./js/index.js",
     "./js/modal.js",
-    "./js/menu.js"
+    "./js/menu.js",
+    "./js/offers.js"
   ],
   output: {
     filename: "bundle.js",

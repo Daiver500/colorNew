@@ -75,6 +75,11 @@
   color: $orange;
 }
 
+.offers__profit--active,
+.offers__percents--active {
+  display: block;
+}
+
 .offers__info {
   display: flex;
   flex-direction: column;
